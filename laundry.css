@@ -1,0 +1,66 @@
+* {margin:0; padding:0; box-sizing:border-box; font-family:'Baloo 2', cursive;}
+body {line-height:1.6; background:#f5f5f5; color:#333;}
+
+/* Navbar */
+.navbar {display:flex; justify-content:space-between; align-items:center; padding:15px 50px; background:#0d3b66; color:#fff; position:sticky; top:0; z-index:1000;}
+.navbar .logo {font-size:1.8rem; font-weight:700;}
+.navbar .logo span {color:#f4d35e;}
+.navbar nav a {color:#fff; text-decoration:none; margin:0 15px; font-weight:500; transition:0.3s;}
+.navbar nav a:hover {color:#f4d35e;}
+.btn-reservasi {background:#f4d35e; color:#0d3b66; border:none; padding:10px 20px; border-radius:5px; font-weight:600; cursor:pointer; transition:0.3s;}
+.btn-reservasi:hover {background:#e0c547;}
+
+/* Hero */
+.hero {display:flex; flex-wrap:wrap; align-items:center; justify-content:center; padding:50px;}
+.hero-text {flex:1 1 400px; padding:20px;}
+.hero-text h1 {font-size:2.8rem; color:#0d3b66;}
+.hero-text p {margin:15px 0 20px; font-size:1.2rem;}
+.btn-pesan {background:#f4d35e; color:#0d3b66; border:none; padding:12px 25px; border-radius:5px; font-weight:600; cursor:pointer; transition:0.3s;}
+.btn-pesan:hover {background:#e0c547;}
+.hero-image img {max-width:300px;}
+
+/* Layanan */
+.layanan {padding:50px; text-align:center; background:#fff;}
+.layanan h2 {font-size:2.2rem; margin-bottom:30px; color:#0d3b66;}
+.layanan-grid {display:grid; grid-template-columns:repeat(auto-fit,minmax(150px,1fr)); gap:25px; justify-items:center; align-items:center;}
+.layanan .card {background:#f9f9f9; padding:20px; border-radius:10px; box-shadow:0 4px 8px rgba(0,0,0,0.1); transition:0.3s;}
+.layanan .card:hover {transform:translateY(-5px); box-shadow:0 6px 12px rgba(0,0,0,0.15);}
+.layanan .card img {width:80px; height:80px; object-fit:contain; margin-bottom:15px;}
+.layanan .card h3 {font-size:1.1rem; color:#0d3b66;}
+
+/* Tentang */
+.tentang {display:flex; flex-wrap:wrap; align-items:center; padding:50px; background:#eaf0f7;}
+.tentang img {flex:1 1 300px; max-width:400px; margin:20px;}
+.tentang-text {flex:2 1 400px; padding:20px;}
+.tentang-text h2 {font-size:2rem; color:#0d3b66; margin-bottom:15px;}
+.tentang-text p {margin-bottom:10px; font-size:1.1rem;}
+
+/* Reservasi */
+.reservasi {padding:50px; text-align:center; background:#fff;}
+.reservasi h2 {font-size:2rem; margin-bottom:30px; color:#0d3b66;}
+.reservasi form {display:flex; flex-direction:column; align-items:center; gap:15px; max-width:400px; margin:0 auto;}
+.reservasi input, .reservasi select {width:100%; padding:12px 15px; border:1px solid #ccc; border-radius:5px; font-size:1rem;}
+.reservasi button {background:#f4d35e; color:#0d3b66; border:none; padding:12px 25px; border-radius:5px; font-weight:600; cursor:pointer; transition:0.3s;}
+.reservasi button:hover {background:#e0c547;}
+
+/* Status */
+.status {padding:50px; text-align:center; background:#f9f9f9;}
+.status h2 {font-size:2rem; margin-bottom:15px; color:#0d3b66;}
+.status p {margin-bottom:20px; font-size:1.1rem;}
+.status form {display:flex; flex-direction:column; align-items:center; gap:15px; max-width:400px; margin:0 auto;}
+.status input {width:100%; padding:12px 15px; border:1px solid #ccc; border-radius:5px; font-size:1rem;}
+.status button {background:#f4d35e; color:#0d3b66; border:none; padding:12px 25px; border-radius:5px; font-weight:600; cursor:pointer; transition:0.3s;}
+.status button:hover {background:#e0c547;}
+.status-result {margin-top:20px; font-size:1.1rem; color:#0d3b66; font-weight:600;}
+
+/* Outlet */
+.outlet {padding:50px; text-align:center; background:#eaf0f7;}
+.outlet h2 {font-size:2rem; margin-bottom:30px; color:#0d3b66;}
+.outlet-grid {display:grid; grid-template-columns:repeat(auto-fit,minmax(250px,1fr)); gap:25px; justify-items:center;}
+.outlet-card {background:#fff; padding:20px; border-radius:10px; box-shadow:0 4px 8px rgba(0,0,0,0.1); transition:0.3s;}
+.outlet-card:hover {transform:translateY(-5px); box-shadow:0 6px 12px rgba(0,0,0,0.15);}
+.outlet-card h3 {font-size:1.2rem; color:#0d3b66; margin-bottom:10px;}
+.outlet-card p {font-size:1rem; color:#333;}
+
+/* Footer */
+footer {background:#0d3b66; color:#fff; text-align:center; padding:20px;}

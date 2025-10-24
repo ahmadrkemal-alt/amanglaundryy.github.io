@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Amang Laundry</title>
+  <link rel="stylesheet" href="laundry.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@400;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+  <!-- Navbar -->
+  <div class="navbar">
+    <div class="logo">Amang<span> Laundry</span></div>
+    <nav>
+      <a href="#hero">Beranda</a>
+      <a href="#layanan">Layanan</a>
+      <a href="#tentang">Tentang</a>
+      <a href="#reservasi">Reservasi</a>
+      <a href="#status">Status</a>
+      <a href="#outlet">Outlet</a>
+    </nav>
+    <a href="https://wa.me/6285795881841" target="_blank">
+      <button class="btn-reservasi">Pesan Sekarang</button>
+    </a>
+  </div>
+
+  <!-- Hero Section -->
+  <section class="hero" id="hero">
+    <div class="hero-text">
+      <h1>Bersih, Wangi, dan Cepat!</h1>
+      <p>Budayakan Malas Mencuci karena mencuci adalah tugas kami.</p>
+      <a href="https://wa.me/6285795881841" target="_blank">
+        <button class="btn-pesan">Mulai Sekarang</button>
+      </a>
+    </div>
+    <div class="hero-image">
+      <img src="logo/amang_laundry_logo-removebg-preview.png" alt="Laundry">
+    </div>
+  </section>
+
+  <!-- Layanan Section -->
+  <section class="layanan" id="layanan">
+    <h2>Layanan Kami</h2>
+    <div class="layanan-grid">
+      <div class="card"><img src="icon/laundry-machine.png" alt="Cuci Setrika"><h3>Cuci Setrika</h3></div>
+      <div class="card"><img src="icon/1455554374_line-24_icon-icons.com_53306.png" alt="Cuci Lipat"><h3>Cuci Lipat</h3></div>
+      <div class="card"><img src="icon/iron.png" alt="Jasa Setrika"><h3>Jasa Setrika</h3></div>
+      <div class="card"><img src="icon/doll.png" alt="Boneka"><h3>Boneka</h3></div>
+      <div class="card"><img src="icon/Audience_icon-icons.com_54210.png" alt="Gorden"><h3>Gorden</h3></div>
+      <div class="card"><img src="icon/adornment.png" alt="Karpet"><h3>Karpet</h3></div>
+      <div class="card"><img src="icon/blanket (2).png" alt="Sprei"><h3>Sprei</h3></div>
+      <div class="card"><img src="icon/blanket.png" alt="Bedcover"><h3>Bedcover</h3></div>
+      <div class="card"><img src="icon/blanket (1).png" alt="Selimut"><h3>Selimut</h3></div>
+      <div class="card"><img src="icon/toolbox.png" alt="Tas"><h3>Tas</h3></div>
+      <div class="card"><img src="icon/towel.png" alt="Sarung"><h3>Sarung</h3></div>
+    </div>
+  </section>
+
+  <!-- Tentang Section -->
+  <section class="tentang" id="tentang">
+    <img src="logo/amang_laundry_logo-removebg-preview.png" alt="Tentang Kami">
+    <div class="tentang-text">
+      <h2>Tentang Amang Laundry</h2>
+      <p>Amang Laundry berdiri dengan komitmen memberikan layanan laundry terbaik, cepat, dan berkualitas tinggi dengan harga bersahabat.</p>
+      <p>Kami menggunakan bahan deterjen ramah lingkungan dan peralatan modern agar hasil lebih bersih dan wangi tahan lama.</p>
+    </div>
+  </section>
+
+  <!-- Reservasi Section -->
+  <section class="reservasi" id="reservasi">
+    <h2>Reservasi Sekarang</h2>
+    <form>
+      <input type="text" placeholder="Nama Lengkap" required>
+      <input type="text" placeholder="Alamat" required>
+      <input type="tel" placeholder="Nomor Telepon" required>
+      <select required>
+        <option value="">Pilih Layanan</option>
+        <option>Cuci Setrika</option>
+        <option>Cuci Lipat</option>
+        <option>Jasa Setrika</option>
+        <option>Boneka</option>
+        <option>Gorden</option>
+        <option>Karpet</option>
+        <option>Sprei</option>
+        <option>Bedcover</option>
+        <option>Selimut</option>
+        <option>Tas</option>
+        <option>Sarung</option>
+      </select>
+      <button type="button">Kirim Pesanan</button>
+    </form>
+  </section>
+
+  <!-- Status Pesanan -->
+  <section class="status" id="status">
+    <h2>Status Pesanan</h2>
+    <p>Masukkan Nomor Telepon Anda untuk mengecek status laundry.</p>
+    <form>
+      <input type="text" id="telepon" placeholder="Nomor Telepon" required>
+      <button type="button" onclick="cekStatus()">Cek Status</button>
+    </form>
+    <div class="status-result" id="status-result"></div>
+  </section>
+
+  <!-- Outlet Section -->
+  <section class="outlet" id="outlet">
+    <h2>Outlet Kami</h2>
+    <div class="outlet-grid">
+      <div class="outlet-card">
+        <h3>Outlet 1</h3>
+        <p>Alamat: 2WXF+98F, Jl. Balandongan, Sudajaya Hilir, Kec. Baros, Kota Sukabumi, Jawa Barat 43161</p>
+      </div>
+      <div class="outlet-card">
+        <h3>Outlet 2</h3>
+        <p>Alamat: Jl. Pramuka No.46, Cikondang, Kec. Citamiang, Kota Sukabumi, Jawa Barat 43142</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <p>© 2025 Amang Laundry | Bersih, Wangi, dan Cepat!</p>
+  </footer>
+
+  <!-- Link ke file JavaScript -->
+  <script src="laundry.js"></script>
+
+</body>
+</html>
